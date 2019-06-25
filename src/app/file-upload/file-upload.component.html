@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="table-responsive">    
+   <br />
+   <div align="center">
+     <button type="button" name="load_data" id="load_data" class="btn btn-info">View CSV</button><br>
+   <input type="file" id="myFile" multiple size="50" (change)="myFunction($event)">
+   </div>
+   <br />
+   <div id="cdr_table">
+   </div>
+  </div>
+ </div>
+ <br>
+ <div [innerHTML]="tableResult">
+
+ </div>
+ <!-- {{this.tableResult}} -->
